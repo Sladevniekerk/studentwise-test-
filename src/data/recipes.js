@@ -1,3 +1,80 @@
-export const FREE_RECIPES = [ /* your two free recipes */ ];
+export const FREE_RECIPES = [
+  {
+    id: "peanut-butter-oats",
+    name: "Peanut Butter Overnight Oats",
+    cost: "R18",
+    time: "10 min",
+    serves: 1,
+    ingredients: ["1 cup oats", "1 cup milk", "2 tbsp peanut butter", "1 banana", "1 tsp honey"],
+    steps: [
+      "Mix oats and milk in a jar",
+      "Stir in peanut butter and honey",
+      "Top with sliced banana",
+      "Refrigerate overnight or for at least 2 hours",
+    ],
+  },
+  {
+    id: "egg-rice",
+    name: "Egg Fried Rice",
+    cost: "R25",
+    time: "15 min",
+    serves: 2,
+    ingredients: ["2 cups cooked rice", "3 eggs", "2 tbsp soy sauce", "1 cup frozen peas", "2 tbsp oil", "garlic"],
+    steps: [
+      "Heat oil in a pan over high heat",
+      "Scramble eggs and set aside",
+      "Fry garlic for 30 seconds",
+      "Add rice and peas, stir fry for 3 minutes",
+      "Add eggs and soy sauce, mix well",
+    ],
+  },
+];
 
-export const PREMIUM_RECIPES = [ /* all recipes */ ];
+export const PREMIUM_RECIPES = [
+  ...FREE_RECIPES,
+  {
+    id: "pasta-arrabiata",
+    name: "Pasta Arrabiata",
+    cost: "R35",
+    time: "20 min",
+    serves: 2,
+    ingredients: ["200g pasta", "1 can tomatoes", "2 cloves garlic", "chili flakes", "olive oil", "fresh basil"],
+    steps: [
+      "Boil pasta according to package instructions",
+      "Fry garlic and chili in olive oil",
+      "Add canned tomatoes and simmer 10 min",
+      "Drain pasta and toss with sauce",
+      "Serve topped with fresh basil",
+    ],
+  },
+  {
+    id: "chicken-wrap",
+    name: "Spicy Chicken Wrap",
+    cost: "R45",
+    time: "25 min",
+    serves: 1,
+    ingredients: ["1 chicken breast", "2 tortillas", "lettuce", "tomato", "cheese", "hot sauce", "yogurt"],
+    steps: [
+      "Season and grill chicken breast",
+      "Slice chicken into strips",
+      "Layer lettuce, tomato, and cheese on tortilla",
+      "Add chicken strips and hot sauce",
+      "Roll up tightly and serve with yogurt dip",
+    ],
+  },
+  {
+    id: "lentil-soup",
+    name: "Red Lentil Soup",
+    cost: "R20",
+    time: "30 min",
+    serves: 4,
+    ingredients: ["1 cup red lentils", "1 onion", "2 carrots", "cumin", "paprika", "vegetable stock", "lemon"],
+    steps: [
+      "Sauté onion and carrots until soft",
+      "Add spices and cook 1 minute",
+      "Add lentils and stock, bring to boil",
+      "Simmer 20 minutes until lentils are soft",
+      "Blend half the soup, add lemon juice, serve",
+    ],
+  },
+];
